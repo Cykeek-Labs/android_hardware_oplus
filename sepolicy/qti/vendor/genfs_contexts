@@ -18,6 +18,7 @@ genfscon sysfs /devices/platform/soc/soc:oplus,chg_intf/oplus_chg         u:obje
 genfscon sysfs /devices/platform/soc/soc:oplus,mms_gauge/oplus_mms        u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,ucsi/power_supply                                       u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/virtual/oplus_chg                                 u:object_r:vendor_sysfs_usb_supply:s0
+genfscon sysfs /devices/virtual/oplus_chg/battery/mmi_charging_enable  u:object_r:vendor_sysfs_usb_supply:s0
 
 # Display
 genfscon proc /devinfo/lcd              u:object_r:vendor_proc_display:s0
@@ -56,6 +57,9 @@ genfscon proc /ultrasound    u:object_r:vendor_proc_ultrasound:s0
 # Versioning
 genfscon proc /oplusVersion    u:object_r:vendor_proc_oplus_version:s0
 genfscon proc /oppoVersion     u:object_r:vendor_proc_oplus_version:s0
+
+# VOOC
+genfscon sysfs /class/power_supply/battery/voocchg_ing u:object_r:sysfs_battery_supply:s0
 
 # Vibrator
 genfscon sysfs /devices/platform/soc/5300.qcom,vibrator/leds/vibrator         u:object_r:sysfs_vibrator:s0

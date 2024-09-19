@@ -1,3 +1,6 @@
+dontaudit rild cache_file:lnk_file r_file_perms;
+dontaudit rild default_prop:file r_file_perms;
+
 allow rild mnt_vendor_file:dir search;
 
 allow rild vendor_proc_display:file r_file_perms;

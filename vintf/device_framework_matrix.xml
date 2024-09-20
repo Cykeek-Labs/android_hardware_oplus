@@ -324,7 +324,6 @@
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ITouchscreenGesture</name>
             <name>IGloveMode</name>
             <instance>default</instance>
         </interface>
@@ -344,7 +343,6 @@
             <name>IKeySwapper</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ITouchscreenGesture/default</fqname>
         <interface>
             <name>ITouchscreenGesture</name>
             <instance>default</instance>
